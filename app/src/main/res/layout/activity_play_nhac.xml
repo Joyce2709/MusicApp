@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/black"
+    tools:context=".PlayNhacActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarplaynhac"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00FFFFFF"
+        android:gravity="center"
+        android:textAlignment="center"
+        app:subtitleTextColor="#000000"
+        app:titleTextColor="#000000" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPagerdianhac"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.6">
+
+            <TextView
+                android:id="@+id/textViewtenbaihatplaynhac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tên bài hát"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:paddingLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/textViewtencasiplaynhac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tên ca sĩ "
+                android:maxWidth="275dp"
+                android:textColor="#E4E4E4"
+                android:textSize="20sp"
+                android:paddingLeft="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="0.02"
+            android:layout_gravity="bottom">
+
+            <ImageButton
+                android:id="@+id/imageViewtimplaynhac"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/iconlove" />
+
+            <ImageButton
+                android:id="@+id/btnShareFB"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/ic_sharemusic"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/seekBartime"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_margin="15dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewruntime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#E4E4E4"
+            android:textSize="18sp"
+            android:text="runtime"
+            android:paddingLeft="5dp" />
+
+        <TextView
+            android:id="@+id/textViewtimetotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:text="TextView"
+            android:textColor="#E8E8E8"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:paddingLeft="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_margin="25dp">
+
+        <ImageButton
+            android:id="@+id/imageButtonpreview"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/black"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/iconpreview" />
+
+        <ImageButton
+            android:id="@+id/imageButtonplaypause"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@color/black"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/nutplay" />
+
+        <ImageButton
+            android:id="@+id/imageButtonnext"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="50dp"
+            android:background="@color/black"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/iconnext" />
+
+    </LinearLayout>
+
+</LinearLayout>
